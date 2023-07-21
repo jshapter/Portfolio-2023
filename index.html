@@ -9,33 +9,41 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
+    
+
     <title>James Shapter - Portfolio</title>
 
     <style>
-        /* .col-8 {
-            border: 2px solid red;
-        } */
         section {
             padding: 75px 0px 75px 0px;
         }
+        section:nth-child {
+            background-color: grey;
+	        color:white;
+        }
     </style>
+
 </head>
 <body>
 
-    <section id="landing-screen" class="bg-dark">
-        <div class="container-lg" style="height: 100vh;">
-            <div class="col-8 align-items-center">
-                <img src="/assets/Frame 1 (1).svg" alt="jtyhd">
-                <a href="#about me" class="btn btn-primary text-white mx-3">About me</a>
+    <section id="particles-js" style="height: 100vh; padding: 0;" class="bg-dark">
+        <div class="container h-100 d-flex align-items-center" style="position: absolute; left: 0; right: 0;">
+            <div class="col">
+                <div class="row text-center py-5 my-5">
+                    <img src="/assets/j-logo.svg" alt="jtyhd">
+                </div>
+                <div class="col text-center py-5 my-5">
+                    <a href="#about me" class="btn btn-outline-light btn-lg">Meet me</a>
+                </div>
+            
             </div>
         </div>
     </section>
 
-    <nav class="navbar navbar-expand-md navbar-light bg-white sticky-top">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
         <div class="container-xxl">
             <a href="#about me" class="navbar-brand">
-                <span class="display-6">James Shapter</span>
-                <!-- <span class="lead">Software Developer</span> -->
+                <span class="display-6 text-warning">James Shapter</span>
                 
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
@@ -73,13 +81,10 @@
                         <div class="d-md-none">
                             <img src="/assets/me.svg" alt="cover" class="img-fluid">
                         </div>
-                        <!-- <div class="display-6">An Introduction.</div> -->
                     </h1>
                     <p class="lead">Utilizing logical and creative problem-solving, I can build engaging applications using contemporary UI/UX design elements.
                     <p>Embarking on the journey of university life in my 30's presented its challenges, but my thirst for knowledge and the sense of accomplishment in completing projects fueled my determination. Now, proudly equipped with a first-class degree in Multimedia Computing BSc, I stand prepared to embrace a fresh career path that ignites my passion.
                     </p>
-                    <!-- <div class="display-6">My Education.</div> -->
-                    
                     </p>
                 </div>
                 <div class="col-md-5 d-none d-md-block">
@@ -263,6 +268,9 @@
             l.addEventListener('click', () => { bsCollapse.toggle() })
         })
     </script> -->
+
+    <script src="particles.js/particles.js"></script>
+    <script src="particles.js/app.js"></script>
 
 </body>
 </html>
