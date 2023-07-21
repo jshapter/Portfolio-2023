@@ -7,38 +7,57 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
     <title>James Shapter - Portfolio</title>
 
     <style>
+        /* .col-8 {
+            border: 2px solid red;
+        } */
         section {
-            padding: 60px 0;
+            padding: 75px 0px 75px 0px;
         }
     </style>
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-md navbar-dark bg-secondary">
+    <section id="landing-screen" class="bg-dark">
+        <div class="container-lg" style="height: 100vh;">
+            <div class="col-8 align-items-center">
+                <img src="/assets/Frame 1 (1).svg" alt="jtyhd">
+                <a href="#about me" class="btn btn-primary text-white mx-3">About me</a>
+            </div>
+        </div>
+    </section>
+
+    <nav class="navbar navbar-expand-md navbar-light bg-white sticky-top">
         <div class="container-xxl">
-            <a href="#intro" class="navbar-brand">
-                <span class="fw-bold text-white">
-                    James Shapter - Software Developer
-                </span>
+            <a href="#about me" class="navbar-brand">
+                <span class="display-6">James Shapter</span>
+                <!-- <span class="lead">Software Developer</span> -->
+                
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="mainn-nav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" id="nav-b"></span>
             </button>
 
             <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Projects</a>
+                        <a href="#skills" class="nav-link">Skills</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">CV</a>
+                        <a href="#projects" class="nav-link">Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Contact</a>
+                        <a href="#sidebar" class="nav-link" data-bs-toggle="offcanvas" role="button" aria-controls="sidebar">Contact</a>
+                    </li>
+                    <li class="nav-item d-md-none">
+                        <a href="/assets/James Shapter CV 2023.pdf" class="nav-link" download="James Shapter - CV 2023">Download CV</a>
+                    </li>
+                    <li class="nav-item d-none d-md-inline">
+                        <a href="/assets/James Shapter CV 2023.pdf" class="btn btn-primary text-white mx-3" download="James Shapter - CV 2023"><i class="bi bi-download"></i>  CV</a>
                     </li>
                 </ul>
             </div>
@@ -50,28 +69,200 @@
             <div class="row justify-content-center align-items-center">
                 <div class="col-md-5 text-center text-md-start">
                     <h1>
-                        <div class="display-2">About Me</div>
-                        <div class="display-5 text-muted">An Introduction</div>
+                        <div class="display-2">Hi, I'm James</div>
+                        <div class="d-md-none">
+                            <img src="/assets/me.svg" alt="cover" class="img-fluid">
+                        </div>
+                        <!-- <div class="display-6">An Introduction.</div> -->
                     </h1>
-                    <p class="lead-4 text-muted">Acquired through a combination of formal education and personal projects,
-                        I possess a strong foundation in the software development life cycle. I
-                        enjoy thinking both creatively and logically in order to solve problems.
+                    <p class="lead">Utilizing logical and creative problem-solving, I can build engaging applications using contemporary UI/UX design elements.
+                    <p>Embarking on the journey of university life in my 30's presented its challenges, but my thirst for knowledge and the sense of accomplishment in completing projects fueled my determination. Now, proudly equipped with a first-class degree in Multimedia Computing BSc, I stand prepared to embrace a fresh career path that ignites my passion.
                     </p>
-                    <a href="#" class="btn btn-secondary btn-lg">Find out more</a>
+                    <!-- <div class="display-6">My Education.</div> -->
+                    
+                    </p>
                 </div>
-                <div class="col-md-5 text-center d-none d-md-block">
-                    <img src="/assets/img-1.webp" alt="cover" class="img-fluid">
+                <div class="col-md-5 d-none d-md-block">
+                    <img src="/assets/me.svg" alt="cover" class="img-fluid">
                 </div>
             </div>
         </div>
     </section>
 
+    <section id="skills" class="bg-light">
+        <div class="container-lg">
+            <div class="text-center">
+                <h2>Skills</h2>
+                <p class="lead text-muted">Current tech stack</p>
+            </div>
+            <div class="row my-5 align-items-center justify-content-center g-2">
+                <div class="col-8 col-lg-4 col-xl-3">
+                    <div class="card border-1">
+                        <div class="card-body text-center py-4">
+                            <h4 class="card-title">Mobile</h4>
+                            <p class="lead card-subtitle">Native Android</p>
+                            <ul class="list-group list-group-flush text-start py-3">
+                                <li class="list-group-item">
+                                    <i style = "color:green;" class="bi bi-check-circle me-2"></i>
+                                    Kotlin
+                                </li>
+                                <li class="list-group-item">
+                                    <i style = "color:green;" class="bi bi-check-circle me-2"></i>
+                                    Jetpack Compose
+                                </li>
+                                <li class="list-group-item">
+                                    <i style = "color:green;" class="bi bi-check-circle me-2"></i>
+                                    Room Database
+                                </li>
+                                <li class="list-group-item">
+                                    <i style = "color:green;" class="bi bi-check-circle me-2"></i>
+                                    Retrofit APIs
+                                </li>
+                                <li class="list-group-item">
+                                    <i style = "color:green;" class="bi bi-check-circle me-2"></i>
+                                    Material UI
+                                </li>
+                                <li class="list-group-item">
+                                    <i style = "color:green;" class="bi bi-check-circle me-2"></i>
+                                    JUnit Testing
+                                </li>
+                            </ul>
+                            <!-- <a href="#" class="btn btn-outline-primary btn-lh mt-1">View mobile projects</a> -->
+                        </div>
+                    </div>
+                </div>
 
+                <div class="col-8 col-lg-4 col-xl-3">
+                    <div class="card border-1">
+                        <div class="card-body text-center py-4">
+                            <h4 class="card-title">Web</h4>
+                            <p class="lead card-subtitle">Responsive applications</p>
+                            <ul class="list-group list-group-flush text-start py-3">
+                                <li class="list-group-item">
+                                    <i style = "color:green;" class="bi bi-check-circle me-2"></i>
+                                    HTML/CSS
+                                </li>
+                                <li class="list-group-item">
+                                    <i style = "color:green;" class="bi bi-check-circle me-2"></i>
+                                    Javascript
+                                </li>
+                                <li class="list-group-item">
+                                    <i style = "color:green;" class="bi bi-check-circle me-2"></i>
+                                    Bootstrap/Sass
+                                </li>
+                                <li class="list-group-item">
+                                    <i style = "color:green;" class="bi bi-check-circle me-2"></i>
+                                    PHP
+                                </li>
+                                <li class="list-group-item">
+                                    <i style = "color:green;" class="bi bi-check-circle me-2"></i>
+                                    MySQL
+                                </li>
+                                <li class="list-group-item">
+                                    <i style = "color:green;" class="bi bi-check-circle me-2"></i>
+                                    React.js & Node.js
+                                </li>
+                            </ul>
+                            <!-- <a href="#" class="btn btn-outline-primary btn-lh mt-1">View web projects</a> -->
+                        </div>
+                    </div>
+                </div>
 
+                <div class="col-8 col-lg-4 col-xl-3">
+                    <div class="card border-1">
+                        <div class="card-body text-center py-4">
+                            <h4 class="card-title">Other</h4>
+                            <p class="lead card-subtitle">General skills</p>
+                            <ul class="list-group list-group-flush text-start py-3">
+                                <li class="list-group-item">
+                                    <i style = "color:green;" class="bi bi-check-circle me-2"></i>
+                                    OOP (Java, Python)
+                                </li>
+                                <li class="list-group-item">
+                                    <i style = "color:green;" class="bi bi-check-circle me-2"></i>
+                                    MVVM/MVC
+                                </li>
+                                <li class="list-group-item">
+                                    <i style = "color:green;" class="bi bi-check-circle me-2"></i>
+                                    Git/GitHub
+                                </li>
+                                <li class="list-group-item">
+                                    <i style = "color:green;" class="bi bi-check-circle me-2"></i>
+                                    Linux CLI
+                                </li>
+                                <li class="list-group-item">
+                                    <i style = "color:green;" class="bi bi-check-circle me-2"></i>
+                                    Figma
+                                </li>
+                                <li class="list-group-item">
+                                    <i style = "color:green;" class="bi bi-check-circle me-2"></i>
+                                    Adobe CC (all apps)
+                                </li>
+                            </ul>
+                            <!-- <a href="assets/James Shapter CV 2023.pdf" class="btn btn-outline-primary btn-lh mt-1">View CV.pdf</a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <section id="projects" style="height: 100vh;">
+        <div class="container-lg">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-5 text-center d-none d-md-block">
+                    <img src="/assets/bg.svg" alt="cover" class="img-fluid">
+                </div>
+                <div class="col-md-5 text-center text-md-start">
+                    <h1>
+                        <div class="display-2">Example Projects</div>
+                    </h1>
+                    <p class="lead-4 text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi explicabo quas corrupti eaque hic culpa, voluptatum dolorem voluptas tenetur sed voluptates possimus omnis! Nesciunt quibusdam ducimus, obcaecati aliquid nemo eligendi!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebar" aria-labelledby="sidebar-label">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="sidebar-label">Contact me</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="close"></button>
+        </div>
+        <div class="offcanvas-body list-group list-group-flush">
+            <p>Get in touch for a chat about how I could be part of your next project!</p>
+            <h5 class="list-group-item">
+                <i class="bi bi-telephone-fill me-3"></i>
+                <a href="tel:+447901886989" class="text-decoration-none link-dark">07901 886989</a>
+            </h5>
+                
+            <h5 class="list-group-item">
+                <i class="bi bi-envelope-at-fill me-3"></i>
+                <a href="mailto:j.a.ashapter@gmail.com" class="text-decoration-none link-dark">j.a.shapter@gmail.com</a>
+            </h5>
+            
+            <h5 class="list-group-item">
+                <i class="bi bi-github me-3"></i>
+                <a href="https://github.com/jshapter" class="text-decoration-none link-dark">jshapter</a>
+            </h5>
+            
+            <h5 class="list-group-item">
+                <i class="bi bi-linkedin me-3"></i>
+                <a href="https://linkedin.com/in/james-shapter-7921a1217/" class="text-decoration-none link-dark">James Shapter</a>
+            </h5>
+            <p class="mt-4">Download my CV</p>
+            <a href="/assets/James Shapter CV 2023.pdf" class="nav-link btn btn-primary btn-lh text-white mx-5" download="proposed_file_nam5"><i class="bi bi-download"></i>  CV</a>
+        </div>
+    </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <!-- <script>
+        const navLinks = document.querySelectorAll('.nav-item')
+        const menuToggle = document.getElementById('main-nav')
+        const bsCollapse = new bootstrap.Collapse(menuToggle, {toggle:false})
+        navLinks.forEach((l) => {
+            l.addEventListener('click', () => { bsCollapse.toggle() })
+        })
+    </script> -->
+
 </body>
 </html>
