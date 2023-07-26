@@ -24,7 +24,7 @@
             background-color: #222b33;
         }
         #lander-content {
-            background: radial-gradient(ellipse at 50% 50%, rgba(33, 37, 41, 0.87) 55%, rgba(33, 37, 41, 0) 100%);
+            background: radial-gradient(ellipse at 50% 50%, rgba(33, 37, 41, 1) 55%, rgba(33, 37, 41, 0) 100%);
         }        
     </style>
 </head>
@@ -34,7 +34,7 @@
         <div class="container h-100 d-flex align-items-center position-absolute" style="left: 0; right: 0;">
             <div id="lander-content" class="col py-5 px-3">
                 <div class="row text-center pt-5">
-                    <img src="/assets/j-logo.svg" alt="jtyhd">
+                    <img src="/img/landing-logo.svg" alt="logo">
                 </div>
                 <div class="col text-center pt-5 mt-5">
                     <a href="#about me" class="btn btn-outline-light btn-lg">Meet me</a>
@@ -75,7 +75,7 @@
                     <h1>
                         <div class="display-2">Hi, I'm James</div>
                         <div class="d-md-none">
-                            <img src="/assets/me.svg" alt="cover" class="img-fluid">
+                            <img src="/img/me.svg" alt="developer" class="img-fluid">
                         </div>
                     </h1>
                     <p class="lead">
@@ -88,11 +88,11 @@
                         The past few years have given me great insight into the software development life cycle, as well as providing me with the skills to create media-rich experiences for web, mobile and beyond.
                     </p>
                     <p>
-                        <a href="/assets/James Shapter CV 2023.pdf" target="_blank" class="h5 text-light">View my CV</a>
+                        <a href="/docs/James Shapter CV.pdf" target="_blank" class="h5 text-light">View my CV</a>
                     </p>
                 </div>
                 <div class="col-md-5 d-none d-md-block">
-                    <img src="/assets/me.svg" alt="cover" class="img-fluid">
+                    <img src="/img/me.svg" alt="developer" class="img-fluid">
                 </div>
             </div>
         </div>
@@ -107,7 +107,7 @@
             <div class="row mt-3 align-items-center justify-content-center g-3">
                 <div class="col-8 col-lg-4 col-xl-3">
                     <div class="card bg-secondary">
-                        <h4 class="card-header text-center text-white">Android</h4>
+                        <h4 class="card-header text-center" style="color: #c0e3ee">Android</h4>
                         <ul class="list-group list-group-flush text-start fw-bold">
                             <li class="list-group-item list-group-item-secondary pt-3">
                                 <i style = "color:green;" class="bi bi-check-circle me-2"></i>
@@ -139,7 +139,7 @@
 
                 <div class="col-8 col-lg-4 col-xl-3">
                     <div class="card bg-secondary">
-                            <h4 class="card-header text-center text-white">Web</h4>
+                            <h4 class="card-header text-center" style="color: #c0e3ee">Web</h4>
                             <!-- <p class="lead card-subtitle">Responsive applications</p> -->
                             <ul class="list-group list-group-flush text-start fw-bold">
                                 <li class="list-group-item list-group-item-secondary pt-3">
@@ -172,7 +172,7 @@
 
                 <div class="col-8 col-lg-4 col-xl-3">
                     <div class="card bg-secondary">
-                            <h4 class="card-header text-center text-white">Other</h4>
+                            <h4 class="card-header text-center" style="color: #c0e3ee">Other</h4>
                             <!-- <p class="lead card-subtitle">General skills</p> -->
                             <ul class="list-group list-group-flush text-start fw-bold">
                                 <li class="list-group-item list-group-item-secondary pt-3">
@@ -203,11 +203,11 @@
                     </div>
                 </div>
             </div>
-            <div class="row d-none d-md-block">
+            <!-- <div class="row d-none d-md-block">
                 <div class="col text-center mt-5">
                     <a href="#projects" class="btn btn-outline-light mx-3"></i>View my projects</a>
                 </div>
-            </div>
+            </div> -->
         </div>
     </section>
 
@@ -215,93 +215,114 @@
         <div class="container-lg">
             <div class="row justify-content-center align-items-center">
                 <div class="col-md-5 text-center d-none d-md-block">
-                    <img src="/assets/bg2.svg" alt="cover" class="img-fluid">
+                    <img src="/img/projects.svg" alt="projects" class="img-fluid">
                 </div>
                 <div class="col-md-5 text-center text-md-start">
                     <h1>
                         <div class="display-2 text-white">Projects</div>
                         <div class="d-md-none">
-                            <img src="/assets/bg2.svg" alt="cover" class="img-fluid">
+                            <img src="/img/projects.svg" alt="projects" class="img-fluid">
                         </div>
                     </h1>
                     <p class="lead text-white">
-                        A selection of simple projects designed to showcase my knowledge of best practices and clean code. New projects are in the works and coming soon.
+                        A selection of simple projects designed to showcase my knowledge of best practices and clean code. I'm always learning something new and new projects are coming soon.
                     </p>
                 </div>
             </div>
 
-            <div class="row mt-3 align-items-center justify-content-center g-3">
+            <div class="row mt-3 align-items-center justify-content-center g-3 pt-5">
                 <div class="col-8 col-lg-3">
                     <div class="card bg-dark border-light">
-                        <img src="assets/noted.svg" alt="" class="card-img-top border-bottom">
+                        <img src="img/noted.svg" alt="noted logo" class="card-img-top border-bottom">
                         <div class="card-body text-white">
                             <div class="row align-items-center">
                                 <i class="bi bi-android col-1"></i>
                                 <h5 class="card-title col">Noted</h5>
                             </div>
                             <div class="card-text text-muted">Deseigned to demonstrate best architectural practice as defined by the developers.android.com documentation.</div>
-                            <a href="#noted" class="btn btn-sm btn-outline-light mt-3" role="button"></i>See more</a>
+                            <a href="#noted" class="btn btn-sm btn-outline-light mt-3" data-bs-toggle="modal" data-bs-target="#reg-modal"></i>See more</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-8 col-lg-3">
                     <div class="card bg-dark border-light">
-                        <img src="assets/apod.png" alt="" class="card-img-top border-bottom">
+                        <img src="img/apod.png" alt="apod logo" class="card-img-top border-bottom">
                         <div class="card-body text-white">
                             <div class="row align-items-center">
                                 <i class="bi bi-android col-1"></i>
                                 <h5 class="card-title col">NASA APOD</h5>
                             </div>
-                            <div class="card-text text-muted">A simple demonstration of Retrofit for API calls, JSON formatting and the Coil imaging library for loading asynchronus images.</div>
-                            <a href="#apod" class="btn btn-sm btn-outline-light mt-3" role="button"></i>See more</a>
+                            <div class="card-text text-muted">A simple demonstration of Retrofit API calls, JSON formatting and the Coil imaging library for loading asynchronus images.</div>
+                            <a href="#apod" class="btn btn-sm btn-outline-light mt-3 disabled" role="button"></i>Coming soon</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-8 col-lg-3">
                     <div class="card bg-dark border-light">
-                        <img src="assets/niceshot.svg" alt="" class="card-img-top border-bottom">
+                        <img src="img/niceshot.svg" alt="niceshot logo" class="card-img-top border-bottom">
                         <div class="card-body text-white">
                             <div class="row align-items-center">
                                 <i class="bi bi-android col-1"></i>
                                 <h5 class="card-title col">NiceShot!</h5>
                             </div>
                             <div class="card-text text-muted">A concept for a new photo sharing platform. This was an exercise in learning Room, Jetpack Compose and advanced Kotlin OOP.</div>
-                            <a href="#niceshot" class="btn btn-sm btn-outline-light mt-3" role="button"></i>See more</a>
+                            <a href="#niceshot" class="btn btn-sm btn-outline-light mt-3 disabled" role="button"></i>Coming soon</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-8 col-lg-3">
                     <div class="card bg-dark border-light">
-                        <img src="assets/js.svg" alt="" class="card-img-top border-bottom">
+                        <img src="img/js.svg" alt="james-shapter logo" class="card-img-top border-bottom">
                         <div class="card-body text-white">
                             <div class="row">
                                 <i class="bi bi-browser-chrome col-1"></i>
-                                <h5 class="card-title col">James-Shapter</h5>
+                                <h5 class="card-title col">James-Shapter.xyz</h5>
                             </div>
-                            <div class="card-text text-muted">A simple project requires a simple solution. This website was built from the ground up with Bootstrap 5's latest features and custom Sass theming.</div>
-                            <a href="#james-shapter" class="btn btn-sm btn-outline-light mt-3" role="button"></i>See more</a>
+                            <div class="card-text text-muted">A simple project requires a simple solution. This website was built from the ground up with Bootstrap 5's latest features and Sass theming.</div>
+                            <a href="#james-shapter" class="btn btn-sm btn-outline-light mt-3 disabled" role="button"></i>Coming soon</a>
                         </div>
                     </div>
                 </div>
 
-                <!-- <div class="col-8 col-lg-3">
-                    <div class="card">
-                        <h4 class="card-title text-center">Personal Dahboard</h4>
-                        <div class="card-body">Coming Soon</div>
-                    </div>
-                </div> -->
             </div>
-            <!-- <div class="row d-none d-md-block"> -->
-                <div class="col text-center mt-5">
-                    <a href="#sidebar" class="btn btn-lg btn-outline-light mx-3" data-bs-toggle="offcanvas" role="button" aria-controls="sidebar"></i>Contact me</a>
+            <div class="row justify-content-center px-5">
+                <div class="col text-end p-5 mx-5">
+                    <a href="/docs/James Shapter CV.pdf" class="btn btn-lg btn-outline-light d-block mx-3 mb-3" download="James Shapter CV"><i class="bi bi-download me-2"></i>CV</a>
                 </div>
-            <!-- </div> -->
+                <div class="col text-start p-5 mx-5">
+                    <a href="#sidebar" class="btn btn-lg btn-outline-light d-block mx-3" data-bs-toggle="offcanvas" role="button" aria-controls="sidebar">Contact</a>
+                </div>
+            </div>
         </div>
-
     </section>
+
+
+    <div class="modal fade" id="reg-modal" tabindex="-1" role="document" aria-labelledby="modal-title" aria-hidden="true">
+        <div class="modal-dialog text-white modal-dialog-centered modal-lg">
+            <div class="modal-content bg-dark">
+                <div class="modal-header">
+                    <h5 class="modal-title">Noted - Android</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="close" style="color: white;"></button>
+                </div>
+                <div class="modal-body row">
+                    <img src="/img/noted-screen.png" alt="noted screenshot" class="col-6 img-fluid p-3">
+                    <div class="col-6">
+                        <p class="lead pt-3">My take on the classic note taking app.</p>
+                        <p class="text-muted">Simple in functionality, this project has been designed to demonstrate the core principles and recommended best practices of application architecture, set out by the developers.android.com documentation.</p>
+                        <p class="text-muted">This has involved the use of a view model to bridge the UI & data layers, as well as hold the state of the UI during recomposition. A data repository has also been implemented to further separate our Room database from the UI layer and ensure data integrity. This approach to architecture helps to promote stability & scalability.</p>
+                        <p class="text-muted">The use of Kotlin coroutines allows for potential time-intensive tasks, such as data retrieval to be performed on background threads. This helps to improve the user experience by greatly reducing the chance of freezing UI, as this is updated on the main thread.</p>
+                        <p class="text-muted">One feature I am pleased to have implemented is the undoing of deleted note entries through the use of an action button on the ‘snackbar’ displayed after choosing to delete a note. This is achieved by caching a copy of the note object upon deletion which can then be quickly ‘upserted’ again by the event handler attached to the action button.</p>
+                        <i class="bi bi-github me-2"></i><a href="https://github.com/jshapter/Noted" target="_blank" class="text-decoration-none link-light">View on GitHub</a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebar" aria-labelledby="sidebar-label">
         <div class="offcanvas-header">
@@ -309,10 +330,10 @@
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="close"></button>
         </div>
         <div class="offcanvas-body list-group list-group-flush mt-3">
-            <h5 class="list-group-item">
+            <!-- <h5 class="list-group-item">
                 <i class="bi bi-telephone-fill me-3"></i>
-                <a href="tel:+447901886989" class="text-decoration-none link-dark">07901 886989</a>
-            </h5>
+                <a href="tel:+447901886989" class="text-decoration-none link-dark"></a>
+            </h5> -->
                 
             <h5 class="list-group-item">
                 <i class="bi bi-envelope-at-fill me-3"></i>
@@ -328,7 +349,7 @@
                 <i class="bi bi-linkedin me-3"></i>
                 <a href="https://linkedin.com/in/james-shapter-7921a1217/" class="text-decoration-none link-dark">James Shapter</a>
             </h5>
-            <a href="/assets/James Shapter CV 2023.pdf" class="nav-link btn btn-dark btn-lh text-white m-5" download="proposed_file_nam5"><i class="bi bi-download me-2"></i>CV</a>
+            <a href="/docs/James Shapter CV.pdf" class="btn btn-outline-dark btn-lh m-5" download="James Shapter CV"><i class="bi bi-download me-2"></i>CV</a>
         </div>
     </div>
 
